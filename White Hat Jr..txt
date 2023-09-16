@@ -1,0 +1,423 @@
+<html>
+    <head>
+        <title>Toggle Menu</title>
+    
+        <script type="text/javascript">
+            function togglemenu(){
+                document.getElementById('sidebar').classList.toggle('active');
+            }
+        </script>
+
+        <style>
+
+*{
+    padding: 0;
+    padding: 0;
+  
+}
+
+#sidebar{
+
+    position: fixed;
+    width: 153;
+    height: 328;
+    left:-153px;
+    background-color:white;
+    margin-top:-212px;
+       
+    
+}
+
+#sidebar li{
+
+    color:rgb(0, 0, 0);
+    font-size: 20;
+    padding:35;
+    border-bottom: 1px solid rgb(3, 3, 3);
+    text-align: center;
+    list-style-type: none;
+    
+    margin:10;
+}
+
+.toggle-btn{
+
+    position: absolute;
+    left:165px;
+    top:-35px;
+}
+
+.toggle-btn span{
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 25;
+    height: 5;
+    margin: 2px;
+    
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+
+ 
+
+
+.nav {
+  overflow: hidden;
+  background-color: #fefefe;
+  height: 54px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width:1517;
+ 
+  margin: -8;
+  margin-top:-8px;
+  
+}
+
+.nav a {
+  
+  float:right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px; 
+
+  
+}
+
+.nav a:hover {
+  
+  color: rgb(8, 154, 22);
+}
+
+div.gallery {
+  margin: 3px;
+  align-items: center;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  height: 560;
+  background-image: linear-gradient(to right, rgb(176, 226, 176), rgb(215, 224, 42));
+
+
+}
+div.gallery:hover {
+  border: 1px solid #c0baba;
+  border-width: 2px;
+  box-shadow: 5px 10px 20px black; 
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: 195px;
+  
+  
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+ 
+}
+
+
+.desc:hover {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+   transition: transform .2s;
+}
+
+.add{
+  
+  writing-mode: vertical-lr;
+  display: inline;
+  float: right;
+  margin:550;
+-webkit-border-radius: 60px;
+  color: rgb(206, 255, 196);
+  margin-top: 170;
+  animation: glowing 1300ms infinite;
+  text-decoration: none;
+  border-radius: 60px;
+  height: 150px;
+  width: 55;
+  font-size: 12;
+  text-align: center;
+  color: black;
+  position:fixed;
+  
+}
+@keyframes glowing {
+        0% {
+          background-color: #9cde87;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+
+.add:hover{
+    
+    color: #ffffff;
+
+}
+
+.add:visited{
+    cursor: pointer;
+    
+}
+
+.add1{
+   float: left; 
+   margin: 195;
+   margin-top: -13%;
+   text-decoration-thickness: 5px;
+}
+
+
+
+.add2{
+
+float: right;
+margin:210;
+margin-top:-540;
+}
+
+.add3{
+
+  float: left;
+  margin: 205;
+  margin-top: -200;
+  background-color:rgb(243, 79, 79);
+  cursor: pointer;
+  box-shadow: 1px 5px 10px rgb(223, 216, 216); 
+  height: 30;
+  width: 128;
+  text-align: center;
+}
+
+
+.img1{
+
+  float: left;
+  margin-top: 0;
+  margin-left: -353;
+  border: 2px solid rgb(162, 155, 155);
+  width: 343;
+  
+
+}
+
+
+.img2{
+
+float: left;
+margin-top: 0;
+margin-left:30;
+border: 2px solid rgb(162, 155, 155);
+width: 343;
+height: 443;
+
+}
+
+
+.img3{
+
+float: left;
+margin-top: 0;
+margin-left:35;
+border: 2px solid rgb(162, 155, 155);
+width: 343;
+height: 442;
+
+}
+
+.sign{
+float: left;
+margin: 186;
+margin-top: 50px;
+border: 2px solid black;
+width:1106;
+height: 290;
+background-color: #ece5e5;
+
+
+}
+
+.main{
+
+  border-style:outset;
+  width: 1006;
+  height: 300;
+  margin: 250;
+  margin-top: -2%;
+}
+
+.img{
+   
+  margin: 500;
+  margin-top: -38%;
+}
+
+
+    </style>
+    </head>
+
+
+
+        <body style="background-image: url(https://img.freepik.com/free-vector/blue-polygonal-shapes-background_1053-434.jpg?w=740&t=st=1694177392~exp=1694177992~hmac=34322f0dd72c47c4a02c77c07da0db654b1f912f8664a62d92bc15b52fee803f);">
+        
+
+
+            <div class="nav" style="position: fixed; float: right;">
+                <img src="C:\Users\Pragati\Desktop\Project images\Whitehat.jpg" height="45" width="200" style="margin:215px; margin-top: 5px;">
+                <a href="file:///C:/Users/Pragati/Desktop/project%20login%20pages/loginpage1.html" class="button" style="background-color: rgb(67, 246, 246);border-radius: 20px; border: 2px solid rgb(134, 135, 169);">Login</a>
+                <a href="file:///C:/Users/Pragati/Desktop/project%20login%20pages/disabilityform.html">Disability Student Support</a>
+                <a href="https://startuptalky.com/about/">AboutUs</a>
+                <a href="C:\Users\Pragati\Desktop\Project images\short-cources_02.png">Other Courses</a>
+                <div id="sidebar" onclick="togglemenu()">
+                  <div class="toggle-btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  </div>
+                  <h5 style="cursor: pointer;"> &nbsp;CERTIFICATION &nbsp;COURSES</h5><hr>
+                  <h5 style="cursor: pointer;"> &nbsp;COURSE&nbsp; SELECTOR</h5><hr>
+                  <h5 style="cursor: pointer;"> &nbsp;PAY FEES</h5><hr>
+                  <h5 style="cursor: pointer;">&nbsp;REFER AND EARN</h5><hr>
+                  <h5 style="cursor: pointer;">&nbsp;SUCCESS STORIES</h5>
+                </div>
+                </div>
+                <br><br><br><br>
+                <h1 style="text-align: center; text-shadow: 3px #ec1515; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; border-color: rgb(11, 11, 11); line-height: 7px; opacity: 0.8; text-decoration-thickness: 5px; color: #0b0a0a;"> Programming Classes for Minor Students</h1>
+                <br> 
+                <hr style="width: 1092;">
+                  <br> <br> <br><br>
+
+                  <div class="gallery" style="margin: 200; margin-top:5px;">
+                    <a target="_blank" href="C:\Users\Pragati\Desktop\Project images\cws-blog-kids-coding.webp">
+                    <img src="C:\Users\Pragati\Desktop\Project images\cws-blog-kids-coding.webp" alt="Cinque Terre" width="290 " height="200"></a>
+                    <div class="desc" style="text-decoration: none;">
+                    <h4 style="text-align: center; color: rgb(18, 17, 17);">Basic Courses</h4><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;">Game Developement</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;">App Developement</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;">Website Devlopement</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;">Blocked Based Coding For Students</h5></h4>
+                    </div>
+                    </div>
+                
+    
+                    <div class="gallery" style="margin-left:-97;">
+                    <a target="_blank" href="C:\Users\Pragati\Desktop\Project images\download (3).png">
+                    <img src="C:\Users\Pragati\Desktop\Project images\download (3).png" alt="Forest" width="600" height="200"></a>
+                    <div class="desc" style=padding:9px;>
+                    <h4 style="color: rgb(24, 22, 22);">Intermediate Courses</h4><hr>
+                    <a href="#" style="text-decoration: none;"><h4 style="text-align: center;"><h4>Python Programming</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;"><h4>Java Programming</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;"><h4>Arduino For Student</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;"><h4>Object-Oriented programming Basics(C, C++)</h5>
+                    </div>
+                    </div>
+    
+                    <div class="gallery" style="float: right; margin:210; margin-top:-567;">
+                    <a target="_blank" href="C:\Users\Pragati\Desktop\Project images\09-05-2017-why-coding-infographic-blog.png">
+                    <img src="C:\Users\Pragati\Desktop\Project images\09-05-2017-why-coding-infographic-blog.png"alt="Mountains" width="600" height="400"></a>
+                    <div class="desc" style=padding:9px;>
+                    <h4 style="color: rgb(16, 15, 15); ">Advance Courses</h4><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;"><h4>Computer Network and Ethical Hacking Basics</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;"><h4>Coding Olympiad (IOI) Preparation Course</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;"><h4>Roblox Game Development</h4></a><hr>
+                    <a href="#"style="text-decoration: none;"><h4 style="text-align: center;"><h4>Graphics Design</h5>
+                    </div>
+                    </div>
+
+                    <div class="add"> <a href="https://code.whitehatjr.com/all/trial/register?utm_source=website&utm_content=website&utm_medium=website" style=" text-decoration: none;"><h3>BOOK A FREE TRIAL</h3></a></div>
+
+                    <hr style="float:left; width: 1090; margin:200 ; margin-top: -125; color: #c0baba;"><br>
+
+                    <div class="add1"><h1 style="color: rgb(12, 12, 12); opacity: 0.8;  text-shadow: 0 0 3px #fbf6f6, 0 0 5px #c36fce;">About Our Online Coding Classes<br> for Minor Students</h1><br><h4 style="font-family: system-ui; text-align: justify; color: rgb(101, 99, 99); opacity:5;">We are not yet another coding classes provider for kids. We believe that<br>the basic foundation of computer-science/coding provided to children<br> should be so effective that the child should be able to create whatever<br>he or she wants independently, without the assistance of a teacher in</br> the future. Our courses are the most comprehensive that you can find<br> on the internet, providing the basic foundation of computer-science<br> from flip-flops and registers to algorithmic thinking. We strive to<br> make coding a tool for the child to understand and appreciate every <br>technology around and to build a creative mindset. As computer<br>-science engineers ourselves, we’re extremely passionate to impart<br> practical knowledge to kids to enable them to be the future problem<br>-solvers, thinkers and creators. We love to go the extra-mile to make <br>student understand comprehensively.<mark style="color: orange; background-color: white;">Take a free trial</mark> class and check <br>us out.</h4></div>
+                    <div class="add2"><iframe width="450" height="315" src="https://www.youtube.com/embed/MuCk1HNyXGM?si=17PGKno8RRNYar4d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+    
+                    <div class="add3"><a href="#" style="text-decoration: none; color: white;text-align: center;">Learn More</a></div>
+                   
+                    <h1 style="color: rgb(15, 15, 16); float: left; margin-top:-95;text-shadow: 0 0 3px #FF0000;"> Coding Activity For Students</h1> 
+                  
+                    <div class="img1"><img src="C:\Users\Pragati\Desktop\Project images\images.jpg"style="width: 338; height: 229;">
+                    <h3 style="color: orange; text-decoration: overline orangered; text-align: center;">Helping Kids Learn Coding Online</h3><h5 style=" text-align: center;color: rgb(12, 11, 11);">4 september 2023</h5><h4 style="text-align: justify; text-align: center; color: rgb(17, 16, 16);">Every child should learn to code if we want to<br>prepare them for success. Coding develops<br> their logical and math skills and helps acquire<br> valuable aptitude and problem-solving skills<br> that …</h4>
+                    </div>
+    
+    
+                    <div class="img2"><img src="C:\Users\Pragati\Desktop\Project images\images (1).jpg" style="width: 342; height: 229 ;">
+                    <h3 style="color: orange; text-decoration: overline orangered; text-align: center;">Gifted Testing & Gifted Programs for Kids</h3><h5 style="text-align: center;color: rgb(18, 13, 13);">7 september 2023</h5><h5 style="text-align: justify; text-align: center;color: rgb(17, 15, 15);">Gifted testing starts early, as early as <br>Kindergarten, but testing children as young as<br> two is  largely not considered necessary and<br>accurate. Gifted testing is considered more<br> accurate between the …</h5>
+                    </div>
+    
+                    <div class="img3"><img src="C:\Users\Pragati\Desktop\Project images\images (2).jpg"  style="width: 341; height: 231;">
+                    <h3 style="color: orange; text-decoration: overline orangered; text-align: center;">Peter Pig Game in Python</h3><h5 style="text-align: center;color: rgb(19, 17, 17);">5 september 2023</h5><h5 style="text-align: justify; text-align: center;color: rgb(12, 7, 7);">In this game, there will be two players – player<br>1 and Player 2. If the total number of turns is <br>10, then Player 1 will roll the dice until …</h5>
+                    </div>
+
+                    <div class="sign">
+                    <h2 style="float: left;  margin: 25; margin-top: 60; color: rgb(91, 16, 161);">Sign up for our free<br>
+                        monthly guide on kids<br>
+                        coding classes</h2>
+      
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." style="margin: 50px; margin-top: 50px; width: 350; height:40; cursor: default;">
+                        <select id="" name="" style="margin: 0; margin-top: 0; height: 40; width: 250; ">
+                          <option>select standard</option>
+                          <option>5th</option>
+                          <option>6th</option>
+                          <option>7th</option>
+                          <option>8th</option>
+                          <option>9th</option>
+                          <option>10th</option>
+                          </select>
+                          <input type="text" id="con" name="Cont" placeholder="Contact" style="margin: 328; margin-top: 0; width: 350; height:40; cursor: default;">
+                          <a href="#register" class="button" style="border-radius: 10px;  margin:96; margin-top:-374; float: right; text-decoration: none; padding: 12px 12px; background-color: orange; height: 26; width: 250; text-align: center;">Register</a>  </div>
+                          
+                          <h3 style="text-align: center;  margin: 690px; margin-top:-115px; float: left;  border-style: solid;border-color: rgb(31, 155, 39); width: 162; height:30; cursor: pointer;"><a href="https://code.whitehatjr.com/s/login" style="text-decoration: none;">Join Class Now</h3></a>
+
+                          <marquee  behavior="alternate" direction="left" scrollamount="15" style="margin-top: -600px;">          
+                            <img src="C:\Users\Pragati\Desktop\Project images\download.jpg" style="height: 350px;border: solid; border-color: black;border: solid rgb(32, 26, 32);" >
+                            <img src="C:\Users\Pragati\Desktop\Project images\images1.jpg"style="height: 350px; solid; border-color: black;border: solid rgb(32, 26, 32); width:490px">
+                            <img src="C:\Users\Pragati\Desktop\Project images\IMG-20191003-WA0038-1024x768.jpg" style="height: 350px;border: solid; border-color: black;border: solid rgb(32, 26, 32);" >
+                            <img src="C:\Users\Pragati\Desktop\Project images\images (3).jpg" style="height: 350px;border: solid; border-color: black;border: solid rgb(32, 26, 32);" >
+                          </marquee>  
+
+                          
+                                      <div class="main">
+                                      
+                                        <h2 style= margin:8%;margin-top:-20;>Get in touch<br>
+                                      
+                                         <h3 style= margin:8%;margin-top:-57;>“Learning to write programs stretches your mind, <br>and helps you think better, creates a way of<br> thinking about things that I think <br>is helpful in all domains.”</h3></h2>
+                                      
+                                        
+                                         <input class="input" name="Email" placeholder="Your Email" style="margin:8%;margin-top:-103; padding: 10px 30px;">
+                                        
+                                         <button style="padding: 10px 20px; cursor: pointer;"> Submit</button>
+                                      
+                                                                      
+                                  <div class="img">
+                                    <img src="C:\Users\Pragati\Desktop\Project images\Main-Video.gif" style="height:268; width:490;">
+                                  
+                                  </div>
+                                  </div>
+                      
+
+
+    </body>
+</html>
